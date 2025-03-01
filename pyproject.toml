@@ -1,0 +1,28 @@
+​​[build-system]
+​​requires = ["setuptools", "wheel"]
+​​build-backend = "setuptools.build_meta"
+​​
+​​[project]
+​​name = "myproject"
+​​version = "0.1.0"
+​​description = "A Python project with a devcontainer setup"
+​​authors = [{name = "Emma Muhleman", email = "emma@ascendinvestmentmanagement.com"}]
+​​
+​​[tool.uv]
+​​python = "3.10"
+​​
+​​[project.dependencies]
+​​joblib = "*"
+​​jupyter = "*"
+​​jupyterlab = "*"
+​​jupyter_contrib_nbextensions = "*"
+​​notebook==6.00
+​​plotly = "*"
+​​quantmod = "*"
+​​sqlalchemy = "*"
+​​urllib3==1.26.15
+​​matplotlib = "*"
+​​seaborn = "*"
+​​numpy = "*"
+​​pandas = "*"
+​​scipy = "*"
