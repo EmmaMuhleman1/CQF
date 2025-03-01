@@ -8,7 +8,7 @@ RUN python -m uv venv /workspace/.venv
 
 # Install required packages
 COPY requirements.txt /workspace
-RUN . /workspace/.venv/bin/activate && pip install -r /workspace/requirements.txt
+RUN . /workspace/.venv/bin/activate && uv install -r /workspace/requirements.txt
 
 # Automatically activate virtual environment
 COPY activate.sh /etc/profile.d/activate.sh
