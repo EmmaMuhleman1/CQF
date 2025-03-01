@@ -1,0 +1,13 @@
+ {
+    "name": "Python 3.10 Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+    "extensions": [
+        "ms-python.python"
+    ]
+}
