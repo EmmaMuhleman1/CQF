@@ -1,28 +1,28 @@
-​​[build-system]
-​​requires = ["setuptools", "wheel"]
-​​build-backend = "setuptools.build_meta"
-​​
-​​[project]
-​​name = "myproject"
-​​version = "0.1.0"
-​​description = "A Python project with a devcontainer setup"
-​​authors = [{name = "Emma Muhleman", email = "emma@ascendinvestmentmanagement.com"}]
-​​
-​​[tool.uv]
-​​python = "3.10"
-​​
-​​[project.dependencies]
-​​joblib = "*"
-​​jupyter = "*"
-​​jupyterlab = "*"
-​​jupyter_contrib_nbextensions = "*"
-​​notebook==6.00
-​​plotly = "*"
-​​quantmod = "*"
-​​sqlalchemy = "*"
-​​urllib3==1.26.15
-​​matplotlib = "*"
-​​seaborn = "*"
-​​numpy = "*"
-​​pandas = "*"
-​​scipy = "*"
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "myproject"
+version = "0.1.0"
+description = "A Python project with a devcontainer setup"
+authors = [{name = "Emma Muhleman", email = "emma@ascendinvestmentmanagement.com"}]
+
+[tool.uv]
+python = "3.10"
+
+[project.dependencies]
+joblib = ">=1.0.0,<2.0.0"
+jupyter = ">=1.0.0,<2.0.0"
+jupyterlab = ">=3.0.0,<4.0.0"
+jupyter_contrib_nbextensions = ">=0.5.0,<0.6.0"
+notebook = "==6.0.0"
+plotly = ">=5.0.0,<6.0.0"
+quantmod = ">=0.1.0,<0.2.0"
+sqlalchemy = ">=1.4.0,<2.0.0"
+urllib3 = "==1.26.15"
+matplotlib = ">=3.0.0,<4.0.0"
+seaborn = ">=0.11.0,<0.12.0"
+numpy = ">=1.21.0,<2.0.0"
+pandas = ">=1.3.0,<2.0.0"
+scipy = ">=1.7.0,<2.0.0"
