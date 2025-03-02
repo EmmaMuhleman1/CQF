@@ -1,2 +1,5 @@
-# cqf_labs
-CQF Lab dependencies using Python version 3.10 and rust for package mgmt
+#  CQF Lab Docker Container
+Created this docker container so that delegates pursuing the Certificate in Quantitative Finance (CQF) designation can easily get their coding environment up-and-running without endless versiioning issues due to the conflicts that arise with pandas compatibility beyond Python 3.10, and with pydantic's ideal structure for LLM applications, which will be built later on, despite its incompatibility with the pandas dataframe formats. Several dependency issues are resolved by simply cloning this Github repository into your file system wherever you intend to work on the labs. Microsoft VS Code should automatically open after you clone the repository. This will magically install and load exactly the modules you will need and the versions you should use for the entirety of the program. 
+#### Make sure to click "Accept" or the check bar upon opening VSCode when you get a notification in the bottom left corner that says "Reopen in Container." 
+Steps: Clone this repository  then reopen it in the container. You will be prompted to do so, simply accept it. And you can now use jupyterlab or VSCode, whichever you wish.
+
