@@ -1,0 +1,22 @@
+{
+    "name": "Python with UV and Jupyter",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "/workspace/.venv/bin/python",
+                "python.terminal.activateEnvironment": true,
+                "jupyter.notebookFileRoot": "${workspaceFolder}"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "forwardPorts": [8888],
+    "postCreateCommand": "source .venv/bin/activate && pip install notebook==6.0.0",
+    "remoteUser": "root"
+}
