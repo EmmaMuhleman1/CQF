@@ -1,7 +1,10 @@
 {
     "name": "Python with UV and Jupyter",
     "build": {
-        "dockerfile": "Dockerfile"
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "3.10"
+        }
     },
     "customizations": {
         "vscode": {
